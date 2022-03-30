@@ -54,7 +54,7 @@ namespace Program {
 						!vlcText.ToString().StartsWith(" VLC m")  && 
 						!vlcText.ToString().StartsWith("VLC m") && 
 						!vlcText.ToString().StartsWith("- VLC m") && 
-						!vlcText.ToString().Contains(customtext1) //avoids it adding itself over and over (crashes windows)
+						!vlcText.ToString().Contains(customtextfront) //avoids it adding itself over and over (crashes windows)
 				)
 				{
 					SetWindowText(hWnd, customtextfront + vlcText.ToString().Replace(" - VLC media player","") + customtextafter );
@@ -67,7 +67,7 @@ namespace Program {
                     !vlcText.ToString().StartsWith(" VLC m")  && 
                     !vlcText.ToString().StartsWith("VLC m") && 
                     !vlcText.ToString().StartsWith("- VLC m") && 
-                    !vlcText.ToString().Contains(customtext1) //avoids it adding itself over and over (crashes windows)
+                    !vlcText.ToString().Contains(customtextfront) //avoids it adding itself over and over (crashes windows)
                 )
                 {
                   SetWindowText(hWnd, customtextfront + vlcText.ToString().Replace(" - VLC media player","") + customtextafter );
